@@ -53,12 +53,11 @@ Using the tool is incredibly simple:
 
 ---
 
-## 📂 What's Inside the Folder?
+## 📂 What's Inside the Installation Folder?
 
 * `MarkdownConverter.dotm`: This is the master blueprint file. It holds the safe, automated background instructions and the visual layout for your new button.
 * `Setup.bat`: The automated installer engine. It takes the blueprint file and cleanly drops it into the exact folder Microsoft Word looks at when booting up. 
 * `Uninstaller.bat`: The automated clean-up utility. Running this safely shuts down active Word instances and completely removes the add-in from your system toolbar.
-* `README.md`: The rich-text documentation layout built specifically for the GitHub homepage interface.
 * `Read Me by Kartik Agrawat.txt`: A clean, plain-text version of the instructions designed to open perfectly inside standard Windows Notepad.
 * `Step 1 Before Intallation.png`: Visual example showing raw Markdown dollar signs pasted inside a document.
 * `Step 2 After Installation.png`: Visual verification showing the butterfly icon successfully loaded onto the Quick Access Toolbar.
