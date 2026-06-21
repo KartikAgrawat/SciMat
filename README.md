@@ -84,3 +84,6 @@ This tool is open-source and free to use! If it saved you hours of manual format
 > I do not come from a traditional computer science background and do not write code from scratch. Instead, I identified a massive, repetitive bottleneck while trying to format study papers and data text. 
 > 
 > I mapped out the logical steps required to fix the issue, designed the user experience (making it a permanent 1-click button for ease of use), tested the edge cases, and collaborated with an AI assistant to generate and refine the underlying code library. This project is a practical example of how non-programmers can use AI to build real, functioning tools to solve daily productivity problems.
+>
+> 
+<img width="1560" height="1060" alt="Example" src="https://github.com/user-attachments/assets/a6f842c6-88f5-45e3-8ec4-01405ac2c826" />
