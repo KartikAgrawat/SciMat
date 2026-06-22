@@ -53,11 +53,12 @@ Using the tool is incredibly simple:
 
 ---
 
-## 📂 What's Inside the Installation Folder?
+## 📂 What's Inside the Folder?
 
 * `MarkdownConverter.dotm`: This is the master blueprint file. It holds the safe, automated background instructions and the visual layout for your new button.
 * `Setup.bat`: The automated installer engine. It takes the blueprint file and cleanly drops it into the exact folder Microsoft Word looks at when booting up. 
 * `Uninstaller.bat`: The automated clean-up utility. Running this safely shuts down active Word instances and completely removes the add-in from your system toolbar.
+* `README.md`: The rich-text documentation layout built specifically for the GitHub homepage interface.
 * `Read Me by Kartik Agrawat.txt`: A clean, plain-text version of the instructions designed to open perfectly inside standard Windows Notepad.
 * `Step 1 Before Intallation.png`: Visual example showing raw Markdown dollar signs pasted inside a document.
 * `Step 2 After Installation.png`: Visual verification showing the butterfly icon successfully loaded onto the Quick Access Toolbar.
@@ -84,6 +85,3 @@ This tool is open-source and free to use! If it saved you hours of manual format
 > I do not come from a traditional computer science background and do not write code from scratch. Instead, I identified a massive, repetitive bottleneck while trying to format study papers and data text. 
 > 
 > I mapped out the logical steps required to fix the issue, designed the user experience (making it a permanent 1-click button for ease of use), tested the edge cases, and collaborated with an AI assistant to generate and refine the underlying code library. This project is a practical example of how non-programmers can use AI to build real, functioning tools to solve daily productivity problems.
->
-> 
-<img width="1560" height="1060" alt="Example" src="https://github.com/user-attachments/assets/a6f842c6-88f5-45e3-8ec4-01405ac2c826" />

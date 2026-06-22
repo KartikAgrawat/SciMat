@@ -28,15 +28,15 @@ if not exist "%STARTUP_DIR%\%ADDIN_NAME%" (
 :: Close Word if it's currently open to prevent file locking issues
 echo Closing Microsoft Word instances to release file locks...
 taskkill /f /im winword.exe >nul 2>&1
-timeout /t 3 /nobreak >nul
+timeout /t 2 /nobreak >nul
 
 :: Delete the Add-in file from the target Startup folder
 echo Purging macro components from Word STARTUP directory...
 del /f /q "%STARTUP_DIR%\%ADDIN_NAME%" >nul
-timeout /t 2 /nobreak >nul
+timeout /t 1 /nobreak >nul
 
 echo Clearing residual system configurations...
-timeout /t 2 /nobreak >nul
+timeout /t 3 /nobreak >nul
 
 if %errorlevel% equ 0 (
     echo.

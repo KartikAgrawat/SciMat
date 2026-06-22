@@ -32,41 +32,51 @@ if not exist "%STARTUP_DIR%" (
 :: Close Word if it's currently open to prevent file locking issues
 echo Closing Microsoft Word instances to prevent file locks...
 taskkill /f /im winword.exe >nul 2>&1
-timeout /t 3 /nobreak >nul
+timeout /t 2 /nobreak >nul
 
 :: Remove the Mark of the Web security block
 echo Scanning file security protocols...
-timeout /t 2 /nobreak >nul
+timeout /t 1 /nobreak >nul
 powershell -Command "Unblock-File -Path '%~dp0%ADDIN_NAME%'"
 echo Security clearance granted.
 timeout /t 2 /nobreak >nul
 
 :: Copy the Add-in file to the target Startup folder
 echo Deploying macro logic into system architecture...
-timeout /t 3 /nobreak >nul
+timeout /t 2 /nobreak >nul
 copy /y "%~dp0%ADDIN_NAME%" "%STARTUP_DIR%\" >nul
 
 echo Registering Quick Access Toolbar shortcuts...
-timeout /t 2 /nobreak >nul
+timeout /t 1 /nobreak >nul
 
 if %errorlevel% equ 0 (
     echo.
     echo ======================================================
-    echo [SUCCESS] Installation Complete!
+    call :Typewriter "[SUCCESS] Installation Complete!"
     echo.
-    echo A permanent conversion button has been added to your
-    echo Microsoft Word interface.
+    call :Typewriter "A permanent conversion button has been added to your"
+    call :Typewriter "Microsoft Word interface."
     echo.
-    echo Look at the very top left of your Word desktop app
-    echo [above the Home ribbon] to find your custom icon.
+    call :Typewriter "Look at the very top left of your Word desktop app"
+    call :Typewriter "[above the Home ribbon] to find your custom icon."
     echo.
-    echo Click that butterfly icon, 
-    echo and watch the formulas instantly fix themselves!
+    call :Typewriter "Click that butterfly icon, "
+    call :Typewriter "and watch the formulas instantly fix themselves!"
     echo ======================================================
 ) else (
     echo.
-    echo [ERROR] Installation failed. Please run this script as Administrator.
+    call :Typewriter "[ERROR] Installation failed. Please run this script as Administrator."
 )
 
 echo.
 pause
+goto EndOfScript
+
+:: ======================================================
+:: THE TYPEWRITER ENGINE (Do not edit below this line)
+:: ======================================================
+:Typewriter
+powershell -NoProfile -Command "$text='%~1'; foreach($c in $text.ToCharArray()){Write-Host -NoNewline $c; Start-Sleep -Milliseconds 20}; Write-Host ''"
+exit /b
+
+:EndOfScript
