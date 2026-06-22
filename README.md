@@ -1,6 +1,6 @@
 🚀 Now evolving into SciMat ! What started as the Markdown Formula Converter (v1.1) is in the process of being completely rewritten for V2.0 to include a lightning-fast Chemistry Engine and Biometrics Automator.
 
-Markdown Formula converter to SciMat V1.5.5-Beta Version is available as Pre-Release.
+Markdown Formula converter to SciMat V1.5.5-Beta (Stable) Version is available
 
 # Markdown Formula to MS Word Equation Converter 
 
