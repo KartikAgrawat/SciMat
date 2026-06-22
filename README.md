@@ -22,7 +22,7 @@ The project is gradually evolving from a document automation tool into **SciMAt 
 ⚠️ This V1.5.5-beta is a pre-release build intended for testing. Features may change as development continues.
 
 
-# Markdown Formula to MS Word Equation Converter 
+# Markdown Formula to MS Word Equation Converter V1.1.0
 
 ### Developed by Kartik Agrawat
 
