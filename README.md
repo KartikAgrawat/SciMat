@@ -17,7 +17,8 @@ The project is gradually evolving from a document automation tool into **SciMAt 
 
 ⚠️ This is a pre-release build intended for testing. Features may change as development continues.
 
-<img width="76" height="50" alt="Example - Chemistry" src="https://github.com/user-attachments/assets/0ded94d7-a777-4661-8538-8c3ec7cfbee7" />
+<img width="759" height="501" alt="Example - Chemistry" src="https://github.com/user-attachments/assets/645934a0-4deb-4dac-a764-ea78d510dd54" />
+
 
 # Markdown Formula to MS Word Equation Converter 
 
