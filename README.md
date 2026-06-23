@@ -31,6 +31,7 @@ The project is gradually evolving from a document automation tool into **SciMAt 
 Have you ever copied text containing mathematical formulas (Lambda, Gamma, fractions, etc.) or chemical formulas (like H2O, NH3, CO2, etc.) after copy-pasting it from an external source, only to find it turns into messy Markdown code full of dollar signs inside Microsoft Word?
 
 For example, instead of a clean, professional equation, you get something ugly like this:
+
 `The formula is $NH_3$ and the variance is $$\sigma_x^2$$`
 
 Normally, you would have to spend hours manually re-typing every single symbol using Word's tedious equation editor. 
